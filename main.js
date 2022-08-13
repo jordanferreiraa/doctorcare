@@ -1,10 +1,23 @@
 function onScroll() {
+  showNavOnScroll()
+  showBackToTopButtonOnScroll()
+}
+
+function showNavOnScroll() {
   const elemento = document.getElementById("navigation")
-    if(scrollY > 0) {
-        elemento.classList.add("scroll")
-    }else{
-        elemento.classList.remove("scroll")
-    }
+  if(scrollY > 0) {
+    elemento.classList.add("scroll")
+  }else{
+    elemento.classList.remove("scroll")
+  }
+}
+
+function showBackToTopButtonOnScroll() {
+  if(scrollY > 400) {
+    backToTopButton.classList.add("show")
+  }else{
+    backToTopButton.classList.remove("show")
+  }
 }
 
 function openMenu() {
