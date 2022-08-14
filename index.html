@@ -12,9 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
-<body onscroll="onScroll()" class="">
+<body>
 
-  <nav id="navigation" class="">
+  <nav id="navigation">
     <div class="wrapper">
       <a class="logo" href="#home">
         <svg width="133" height="18" viewBox="0 0 133 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@
           <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
         </ul>
 
-        <a class="button" href="#">Agende sua consulta</a>
+        <a class="button" onclick="closeMenu()" href="#contact">Agende sua consulta</a>
 
         <ul class="social-links">
           <li>
@@ -294,7 +294,7 @@
     </div>    
   </footer>
 
-  <a id="backToTopButton" class="show" href="#home">
+  <a id="backToTopButton" href="#home">
     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="20" cy="20" r="20" fill="#00856F"/>
       <path d="M20 27V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
